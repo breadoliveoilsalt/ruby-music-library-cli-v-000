@@ -12,6 +12,8 @@ end
 secondArray = newArray.sort_by { |obj| obj.name }
 
 #-----
+load 'config/environment.rb'
+
  main = MusicLibraryController.new('./spec/fixtures/mp3s')
 
  re = Artist.find_by_name("Real Estate")
