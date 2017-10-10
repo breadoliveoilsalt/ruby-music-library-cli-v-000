@@ -3,6 +3,7 @@
 load './config/environment.rb'
 
 # load in environment files first -- put require 'irb' right before the irb.start
+
 def reload!
   load ‘./config/environment.rb’
 end
