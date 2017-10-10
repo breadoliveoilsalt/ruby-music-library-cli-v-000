@@ -2,13 +2,14 @@
 
 load './config/environment.rb'
 
-# load in environment files first -- put require 'irb' right before the irb.start
-
 def reload!
   load ‘./config/environment.rb’
 end
 
-
 require 'irb'
 
 IRB.start
+
+# load in environment files first -- put require 'irb' right before the irb.start
+# require_all 'lib' [from the environment file] is a gem -- so if you try it and are getting error messages, the fact that the gem may not be loaded is the problem 
+
